@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/signin.css">
+
+
+  <title>Inicia Sesión</title>
+
+
+</head>
+  <body>
+  <header class="content header">
+    <!-- Seccion del video -->
+    <div class="header-video">
+      <video src="video/befirst.mp4" type="video/mp4" muted autoplay loop></video>
+    </div>
+
+    <!-- capa transparente -->
+    <div class="header-overlay"></div>
+
+    <!-- Seccion del contenido -->
+    <div class="header-content">
+      <form class="form-signin" method="post" action="registro.php">
+         <img class="mb-4" src="res/logo.png" alt="" width="280" height="210">
+         <h1 class="h4 mb-3 font-weight-normal">Registrate</h1>
+
+          <div class="form-group">
+
+           <label for="inputEmail" class="sr-only">Nombre</label>
+           <input type="text" name="nombre" class="form-control" placeholder="Nombre" required autofocus>
+
+           <label for="inputPassword" class="sr-only">Apellido</label>
+           <input type="text" name="apellido" class="form-control" placeholder="Apellido" required>
+
+           <label for="inputPassword" class="sr-only">Email</label>
+           <input type="email" name="email" class="form-control" placeholder="Email" required>
+
+           <label for="inputPassword" class="sr-only">Contraseña</label>
+           <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
+
+           <label for="inputPassword" class="sr-only">Repertir Contraseña</label>
+           <input type="password" name="rpassword" class="form-control" placeholder="Repetir Contraseña" required>
+
+           <label for="exampleFormControlFile1">Subir imagen de perfil</label>
+           <input type="file" name="foto" class="form-control-file"  accept="image/*" id="exampleFormControlFile1">
+          </div>
+
+         <button name="login" class="btn btn-lg btn-outline-primary btn-block" type="submit">Entrar</button>
+         <a href="login.html">
+            <button type="button" name="button" class="btn btn-link"> ¿Ya tienes una cuenta? Da click aquí. </button>
+         </a>
+      </form>
+    </div>
+
+  </header>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
