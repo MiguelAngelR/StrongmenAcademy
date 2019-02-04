@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: arial;
 }
-
 .contet-all{
   width: 100%;
   display: flex;
@@ -13,10 +12,9 @@
 }
 
 .content-img{
-  width: 600px;
-  height: 400px;
-  margin: auto;
-  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  margin: 0px;
   position: relative;
   overflow: hidden;
 }
@@ -31,10 +29,11 @@
   height: 1000px;
   position: absolute;
   top: 0;
-  background: rgba(20, 120, 170,0.5);
-  transform: rotate(-30deg);
-  margin-left: -800px;
-  transition: all 300ms;
+  background: rgb(26, 26, 26,0.8);
+  transform: rotate(45deg);
+  margin-top: 1000px;
+  margin-left: -400px;
+  transition: all 1300ms;
   box-shadow: 0px 1px 10px;
 }
 
@@ -43,26 +42,42 @@
   height: 1000px;
   position: absolute;
   top: 0;
-  background: rgba(26, 140, 213, 0.86);
-  transform: rotate(30deg);
-  margin-left: -800px;
-  margin-top: -660px;
-  transition: all 400ms;
+  background: rgb(26, 26, 26,0.8);
+  transform: rotate(45deg);
+  margin-left: -200px;
+  margin-top: 1000px;
+  transition: all 1200ms;
   box-shadow: 0px 1px 25px;
 }
 
+.content-3{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  margin-top: 1000px;
+  transition: all 600ms;
+}
+
 .content-img:hover .content-1{
-  transition: all 200ms;
-  width: 300%;
+  transition: all 1300ms;
+  margin-top: -150px;
 }
 
 .content-img:hover .content-2{
-  transition: all 300ms;
-  width: 279%;
+  transition: all 1200ms;
+  margin-top: -150px;
+}
+
+.content-img:hover .content-3{
+  width: 100%;
+  height: 100%;
+  transition: all 600ms;
+  margin-top: 0px;
 }
 
 .content-img:hover img{
-  transform: scale(1.5);
+  transform: scale(1.1);
   transition: all 200ms;
   opacity: 0.8;
 }
@@ -70,8 +85,9 @@
 .content-txt{
   position: absolute;
   top: 0;
-  width: 400px;
-  padding: 10px;
+  width: auto;
+  height: auto;
+  padding: auto;
   z-index: 1;
   color: white;
   text-align: center;
