@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/signin.css">
 
@@ -26,35 +26,51 @@
 
     <!-- Seccion del contenido -->
     <div class="header-content">
+
       <form class="form-signin" method="post" action="registro.php">
-         <img class="mb-4" src="res/logo.png" alt="" width="280" height="210">
+         <img class="mb-4" src="res/logo.png" alt="" width="260" height="210">
          <h1 class="h4 mb-3 font-weight-normal">Registrate</h1>
 
           <div class="form-group">
-
-           <label for="inputEmail" class="sr-only">Nombre</label>
-           <input type="text" name="nombre" class="form-control" placeholder="Nombre" required autofocus>
-
-           <label for="inputPassword" class="sr-only">Apellido</label>
-           <input type="text" name="apellido" class="form-control" placeholder="Apellido" required>
-
-           <label for="inputPassword" class="sr-only">Email</label>
-           <input type="email" name="email" class="form-control" placeholder="Email" required>
-
-           <label for="inputPassword" class="sr-only">Contraseña</label>
-           <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
-
-           <label for="inputPassword" class="sr-only">Repertir Contraseña</label>
-           <input type="password" name="rpassword" class="form-control" placeholder="Repetir Contraseña" required>
-
-           <label for="exampleFormControlFile1">Subir imagen de perfil</label>
-           <input type="file" name="foto" class="form-control-file"  accept="image/*" id="exampleFormControlFile1">
+            <div class="form-group row">
+              <label for="nombre" class="col-sm-3 col-form-label">Nombre(s)</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tus nombre(s)" required autofocus>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="apellidos" class="col-sm-3 col-form-label">Apellidos</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Escribe tus Apellido(s)" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-sm-3 col-form-label">Email</label>
+              <div class="col-sm-9">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Escribe tu email" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="password" class="col-sm-3 col-form-label">Contraseña</label>
+              <div class="col-sm-9">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Escribe una contraseña" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="repassword" class="col-sm-3 col-form-label">Confirmar Contraseña</label>
+              <div class="col-sm-9">
+                <input type="password" class="form-control" id="repassword" name="repassword" placeholder="Confirmar contraseña" required>
+              </div>
+            </div>
+            <small id="emailHelp" class="form-text">Jamás compartiremos tu información con terceros.</small>
           </div>
 
-         <button name="login" class="btn btn-lg btn-outline-primary btn-block" type="submit">Entrar</button>
-         <a href="login.html">
-            <button type="button" name="button" class="btn btn-link"> ¿Ya tienes una cuenta? Da click aquí. </button>
-         </a>
+
+          <button name="login" class="btn btn-lg btn-light btn-block" type="submit">Registrarse</button>
+          <a href="login.html">
+              <button type="button" name="button" class="btn btn-outline-light"> ¿Ya tienes una cuenta? Da click aquí. </button>
+          </a>
+
       </form>
     </div>
 

@@ -48,7 +48,43 @@ body {
   letter-spacing: -.05rem;
 }
 
+/* Portada */
+.container-bg{
 
+  height: 100%;
+  width: 100%;
+  top: -100px;
+  left: 0;
+  background-image: url(../res/bghome.jpg);
+  background-size: 300%;
+  animation: movimiento 20s infinite linear alternate;
+
+}
+
+.gradient{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background:-webkit-linear-gradient(left,rgb(46, 113, 152), #3cb0f1);
+  z-index: 0;
+  opacity: .40;
+
+}
+
+.footer{
+  z-index: 2;
+}
+
+@keyframes movimiento {
+  from{
+    background-position: bottom left;
+  }to{
+    background-position: top right;
+  }
+
+}
 
 
 @media (min-width: 40em) {
