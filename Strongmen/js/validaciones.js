@@ -1,7 +1,7 @@
 function validar(){
 
-	var er1 = new RegExp("^[a-zA-Z]+( [a-zA-Z]+)*$");
-	var er2 = new RegExp("^[a-zA-Z]+$");
+	var er1 = new RegExp("^[a-zA-Záéíóú]+( [a-zA-Záéíóú]+)*$");
+	var er2 = new RegExp("^[a-zA-Záéíóú]+$");
 	var nombre = document.getElementById("nombre").value;
 	var pass = document.getElementById("password").value;
 	var rpass = document.getElementById("rpassword").value;
