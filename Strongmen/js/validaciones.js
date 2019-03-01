@@ -43,8 +43,8 @@ function validar(){
 		}
 	}
 
-	
 
-	
-	
+
+
+
 }
