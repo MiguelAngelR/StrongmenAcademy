@@ -31,7 +31,10 @@
 				print_r($conexion->errorInfo());
 			}
 		}else{
-			echo "Existen usuarios que comparten algún dato critico (nombre ó correo)";
+			session_start();
+				$_SESSION["error_nombre"] = 1;
+				echo $_SESSION["error_nombre"];
+				header('location: ../registro.php');
 		}
 	?>
 </body>
