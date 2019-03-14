@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -11,7 +11,16 @@
 
 
   <title>Login</title>
-
+  <?php
+    session_start();
+    if($_SESSION["error_login"] ==1){
+      echo "<script>alert('No se encontro ningun usuario con el correo proporcionado')</script>";
+    }
+    if($_SESSION["error_login"] == 2){
+     echo "<script>alert('La contraseña proporcionada no es correcta')</script>"; 
+    }
+    $_SESSION["error_login"]=0;
+  ?>
 
 </head>
   <body>
@@ -27,14 +36,14 @@
     <!-- Seccion del contenido -->
     <div class="header-content">
 
-      <form class="form-signin" method="post" action="login.php">
+      <form class="form-signin" method="post" action="php/login.php">
        <img class="mb-4" src="res/logo.png" alt="" width="260" height="210">
        <h1 class="h4 mb-3 font-weight-normal">Iniciar Sesión</h1>
 
        <div class="form-group row">
          <label for="Email" class="col-sm-3 col-form-label">Email</label>
          <div class="col-sm-9">
-           <input type="email" class="form-control" id="Email" name="Email" placeholder="Escribe tu correo" required>
+           <input type="email" class="form-control" id="Email" name="email" placeholder="Escribe tu correo" required>
          </div>
        </div>
        <div class="form-group row">

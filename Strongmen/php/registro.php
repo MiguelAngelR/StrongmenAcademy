@@ -1,4 +1,4 @@
-<?php
+	<?php
 
 	$nombre = $_POST["nombre"];
 	$ap_pat = $_POST["ap_pat"];
