@@ -8,7 +8,16 @@
   <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/signin.css">
+    <script type="text/javascript">
+      <?php
+          session_start();
+          if($_SESSION["error_nombre"]==1){
+              echo "alert('ya se ha regitrado un usuario con este nombre o contraeña');";  
+              $_SESSION["error_nombre"]=0;
+          }
+      ?>
 
+    </script>
   <title>Registro</title>
 
 </head>
@@ -83,13 +92,7 @@
   </header>
   <!--script-->
 
-  <?php
-    session_start();
-    if($_SESSION["error_nombre"]==1){
-      echo "<script>alert('Existen usuarios que comparten nombres o correo electronico'); </script>";
-      $_SESSION["error_nombre"]=0;
-    }
-  ?>
+ 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
