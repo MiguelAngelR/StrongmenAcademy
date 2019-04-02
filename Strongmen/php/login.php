@@ -8,7 +8,10 @@
 	if($resultado->rowCount() != 0){
 		$fila = $resultado -> fetch(PDO::FETCH_ASSOC);
 		if(strcmp(base64_decode(base64_decode($fila["pass"])),$_POST["password"])==0){
-			echo "las contraseñas coinciden";
+			session_start();
+			$_SESSION["usuario"] = $user;
+			$_SESSION["error_login"]=0;
+			header("location:../home.php");
 		}else{
 			session_start();
 			$_SESSION["error_login"]=2;

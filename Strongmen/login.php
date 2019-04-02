@@ -14,10 +14,10 @@
   <?php
     session_start();
     if($_SESSION["error_login"] ==1){
-      echo "<script>alert('No se encontro ningun usuario con el correo proporcionado')</script>";
+      echo "<script>alert('No se encontro ningun usuario con el correo proporcionado');</script>";
     }
     if($_SESSION["error_login"] == 2){
-     echo "<script>alert('La contraseña proporcionada no es correcta')</script>";
+     echo "<script>alert('La contraseña proporcionada no es correcta');</script>";
     }
     $_SESSION["error_login"]=0;
   ?>
