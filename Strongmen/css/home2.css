@@ -8,6 +8,9 @@
   animation: movimiento 10s infinite linear alternate;
 
 }
+
+
+
 .marketing .col-lg-6 {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -95,8 +98,4 @@ footer{
 .zoom:hover
 {
  transform: scale(1.5);
-}
-body ::-webkit
-{
-
 }

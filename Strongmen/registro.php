@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="res/logo.ico" rel="icon">
   <link rel="stylesheet" href="css/signin.css">
     <script type="text/javascript">
       <?php
           session_start();
           if($_SESSION["error_nombre"]==1){
-              echo "alert('ya se ha regitrado un usuario con este nombre o contraeña');";  
+              echo "alert('ya se ha regitrado un usuario con este nombre o contraeña');";
               $_SESSION["error_nombre"]=0;
           }
       ?>
@@ -22,6 +23,18 @@
 
 </head>
   <body>
+    <style>
+    body::-webkit-scrollbar{
+      width: 10px;
+      background: #00001a;
+    }
+    body::-webkit-scrollbar-thumb{
+      background: rgba(255, 255, 255, .3);
+      border-radius: 10px;
+      border-right: 2px solid #00001a;
+    }
+    </style>
+
   <header class="content header">
     <!-- Seccion del video -->
     <div class="header-video">
@@ -92,7 +105,7 @@
   </header>
   <!--script-->
 
- 
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

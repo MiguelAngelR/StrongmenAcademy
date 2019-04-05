@@ -7,11 +7,23 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
       <link href="css/home2.css" rel="stylesheet">
+      <link href="res/logo.ico" rel="icon">
+      <link rel="stylesheet" href="res/fonts.css">
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
   <head>
 
     <body>
       <style>
       body {overflow-x:hidden;}
+      body::-webkit-scrollbar{
+        width: 10px;
+        background: #00001a;
+      }
+      body::-webkit-scrollbar-thumb{
+        background: rgba(255, 255, 255, .3);
+        border-radius: 10px;
+        border-right: 2px solid #00001a;
+      }
       </style>
 
       <header>
@@ -26,10 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
              <ul class="navbar-nav mr-auto">
                <li class="nav-item active">
-                 <a class="nav-link" href="home2.html">Inicio  <span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="about.html">Acerca de Nosotros</a>
+                 <a class="nav-link" href="home.php">Inicio  <span class="sr-only">(current)</span></a>
                </li>
                <li class="nav-item">
                  <a class="nav-link" href="asesorias.html">Asesorias</a>
@@ -54,7 +63,7 @@
                <li class=\"nav-item \">
                  <a class=\"nav-link\" href=\"login.php\">Login</a>
                </li>
-             </ul>"; 
+             </ul>";
              }
 
              ?>
@@ -149,12 +158,12 @@
                     </div>
                       <div class="col-md-3">
                       <center><h5>Contactanos </h5></center>
-                        <p> Telefono: +520000000000</p>
+                      <p><span class="icon-phone"></span> Telefono: +520000000000</p>
                         <hr color= "ffffff">
-                        <p> Direccción: hajajahssjakkausa
+                      <p><span class="icon-location"></span> Direccción: hajajahssjakkausa
                           sjshusooausus </p>
                         <hr color= "ffffff">
-                        <p> Correo electronico: </p>
+                      <p><span class="icon-mail-envelope-open"></span> Correo electronico: </p>
                         <p> donpatitofeo@yahoo.com </p>
                       </div>
                       <div class="col-md-3">
@@ -187,6 +196,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
   </body>
 
 </html>

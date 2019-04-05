@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/signin.css">
+  <link href="res/logo.ico" rel="icon">
 
 
   <title>Login</title>
@@ -24,6 +25,18 @@
 
 </head>
   <body>
+    <style>
+    body::-webkit-scrollbar{
+      width: 10px;
+      background: #00001a;
+    }
+    body::-webkit-scrollbar-thumb{
+      background: rgba(255, 255, 255, .3);
+      border-radius: 10px;
+      border-right: 2px solid #00001a;
+    }
+    </style>
+
   <header class="content header">
     <!-- Seccion del video -->
     <div class="header-video">
