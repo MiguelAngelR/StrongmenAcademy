@@ -1,0 +1,29 @@
+
+.card:hover
+{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,5);
+
+}
+
+.card-img-overlay:hover
+{
+  background-image: url(../res/instalaciones.jpg);
+  animation: movimiento 10s infinite linear alternate;
+  transition: .5s;
+  height: 81%;
+  filter: blur(.05px);
+  transform: scale(1.1);
+
+}
+
+.card-text
+{
+  opacity: 0;
+}
+.card-text:hover
+{
+  opacity: 1;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
