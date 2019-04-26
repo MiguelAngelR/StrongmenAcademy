@@ -1,14 +1,53 @@
-.container-portada{
-  width: 100%;
-  height: 580px;
-  position: relative;
-  overflow: auto;
-  background-image: url(../res/instalaciones.jpg);
-  background-size: 300%;
-  animation: movimiento 10s infinite linear alternate;
+
+body {
+  padding-top: 3rem;
+  background-color: #fff;
+  color: #ffffff;
+}
+
+.content-card{
 
 }
 
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+@media (min-width: 40em) {
+
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
 
 
 .marketing .col-lg-6 {
@@ -27,68 +66,20 @@
   margin: 5rem 0;
 }
 
-@keyframes movimiento {
-  from{
-    background-position: bottom left;
-  }to{
-    background-position: top right;
-  }
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
 }
 
-.capa-gradient{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: -webkit-linear-gradient(left,black, #0672d0);
-  opacity: 0.4;
-}
-.container-details{
-  width: 100%;
-  max-width: 1200px;
-  position: relative;
-  margin: auto;
-}
-.details{
-  width: 100%;
-  max-width: 100%;
-  position: relative;
-  top: 20px;
-  left: 20px;
-  color: white;
-}
-.details h1{
-  font-size: 40px;
-  font-weight: 100;
-  text-align: center;
-}
-.details p{
-  margin-top: 20px;
-  font-size: 20;
-}
-.detalles button{
-  padding: 10px 20 px;
-  font-size: 16px;
-  background: none;
-  border-style: none;
-  border: 1px solid white;
-  color: white;
-  margin-top: 20px;
-  transition: background 300 ms;
-  cursor: pointer;
-}
-.details button:hover{
-  background:white;
-  color:black;
-}
 
 .background-4 {
   background-color: #00001a;
   color: #ffffff;
 }
 
-footer{
-  width: 100%;
-  margin-top: :50 px;
+.footer{
+  z-index: 2;
 }
 
 .zoom

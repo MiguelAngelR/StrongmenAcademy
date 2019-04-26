@@ -1,0 +1,17 @@
+@media(max-wedth:768px){
+  .header{
+    padding: 0px;
+    height: 750px;
+  }
+  .header .button{
+    font-size: 10px;
+    margin-left: 20px;
+  }
+  .header h1
+  {
+    font-size: 20px;
+  }
+  .header p{
+    font-size: 12px;
+  }
+}
