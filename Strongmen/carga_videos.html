@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Video</title>
+    <title>Panel de Control</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
       <link href="css/panel.css" rel="stylesheet">
       <link href="res/logo.ico" rel="icon">
@@ -43,9 +43,15 @@
                <li class="nav-item">
                  <a class="nav-link" href="asesorias.html">Asesorias</a>
                </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="aulas.html">Aulas</a>
-               </li>
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Administrador
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="carga_videos.html">Panel de Configuración</a>
+                  <a class="dropdown-item" href="modificar_video.html">Busqueda de videos</a>
+                </div>
+              </li>
              </ul>
              <ul class="navbar-nav navbar-right ">
                <li class="nav-item ">
@@ -62,56 +68,73 @@
       </header>
       <!--Panel -->
       <br>
-      <center><H2> Video de Enternamiento </h2></center>
-        <br>
-        <div class="container">
-          <form>
-            <div class="form-group">
-              <label for="titulo">Ejercios para tener gluteos bonitos</label> <!--Titulo del video en la base -->
-            </div>
-          </form>
-        </div>
-        <div class="container">
+      <center><H2> Carga de videos </h2></center>
+        <div class="container" background= #C9D1F1>
          <section class="main row">
           <article class="col-xs-12 col-sm-8 col-md-9 col-lg-8">
-            <div id="video">
+            <div id="subir">
+              <h3> <small>Subir Video</small></h3>
               <br>
-             <video width="100%" height="60%" controls><source src="video/befirst.mp4" type="video/mp4"></video>
-            </div>
-            <br>
+              <form>
+                <div class="form-group">
+                  <br>
+                  <br>
+                  <br>
+                  <center>
+                  <label for="exampleFormControlFile1">Seleccionar video</label>
+                  <input type="file" class="form-control-file" id="cargar">
+                  </center>
+                </div>
+              </form>
           </article>
           <hr class="w-100 clearfix d-md-none ">
-          <!-- Formulario-->
+          <!-- Chat -->
           <article class="col-xs-12 col-sm-4 col-md-3 col-lg-4">
             <div id="contenedor">
-            <br>
+              <h3><small> Detalles del Video</small> </h3>
+              <br>
+                <div id= "detalles"> </div>
                 <form>
+                      <div class="form-group">
+                        <label for="idVideo">ID</label>
+                        <input type="text" class="form-control" id="idVideo" placeholder="Id del Video">
+                      </div>
+                      <div class="form-group">
+                        <label for="titulo">Titulo</label>
+                        <input type="text" class="form-control" id="titulo" placeholder="Titulo del Video">
+                      </div>
                     <div class="form-row">
                       <div class="form-group col-md-6">
-                        <label for="duracion">Duración:</label>
-                        <br>
-                        <label for="minutos">17 min.</label> <!--duración del video en la base -->
-                        <hr>
+                        <label for="duracion">Duración</label>
+                        <input type="text" class="form-control" id="duracion">
                       </div>
                       <div class="form-group col-md-6">
                         <label for="dificultad">Dificultad</label>
-                        <br>
-                        <label for="dificultad">Nivel 1</label> <!--difucultad del video en la base -->
-                        <hr>
+                        <select id="dificultad" class="form-control">
+                          <option selected>Seleccionar</option>
+                          <option>Nivel 1</option>
+                          <option>Nivel 2</option>
+                          <option>Nivel 3</option>
+                        </select>
                       </div>
                     </div>
+                    <div class="form-group">
                       <div class="form-group">
                         <label for="entrenamiento">Tipo de Enternamiento</label>
-                        <br>
-                        <label for="entrenamiento">Fuerza</label> <!--tipo de entrenamiento del video en la base -->
-                        <hr>
+                        <select id="entrenamiento" class="form-control">
+                          <option selected>Seleccionar...</option>
+                          <option>Fuerza</option>
+                          <option>Opcion 2</option>
+                          <option>Otra Opcion xD</option>
+                        </select>
+                      </div>
                     </div>
                     <div class="form-group">
                       <label for="descripción">Descripción del Video</label>
-                      <br>
-                      <label for="descripción">Esta es una rutina para mantenerte saludable que te ayudara a mantener tus gluteos firmes y fuertes</label><!--descripción del video en la base -->
-                      <hr>
+                      <textarea class="form-control" id="descripción" rows="3"></textarea>
                     </div>
+                    <button type="submit" class="btn btn-success">Subir</button>
+                    <button type="submit" class="btn btn-danger">Cancelar</button>
                   </form>
                   <br>
            </div>
