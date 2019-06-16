@@ -70,41 +70,22 @@
       <br>
       <center><H2> Busqueda de videos </h2></center>
         <br>
-        <div class="container col-xs-3 col-sm-3 col-md-3 col-lg-3" >
-          <form class="form-inline my-2 my-lg-0">
+        <center>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" >
+          <form class="form-inline my-2 my-lg-0 ">
           <center>  <input class="form-control mr-sm-2" type="search" placeholder="Ingresa ID del Video" aria-label="Search"> </center>
             <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button></center>
             <br>
-    </form>
+         </form>
         </div>
+      </center>
         <br>
         <div class="container">
-         <section class="main row">
-          <article class="col-xs-12 col-sm-8 col-md-9 col-lg-8">
-            <div id="subir">
-              <h3> <small>Subir Video</small></h3>
-              <br>
-              <form>
-                <div class="form-group">
-                  <br>
-                  <br>
-                  <br>
-                  <center>
-                  <label for="exampleFormControlFile1">Selecciona aquí si es necesario cambiar el vídeo</label>
-                  <input type="file" class="form-control-file" id="cargar" disabled>
-                  </center>
-                </div>
-              </form>
-          </article>
-          <hr class="w-100 clearfix d-md-none ">
           <!-- Formulario-->
-          <article class="col-xs-12 col-sm-4 col-md-3 col-lg-4">
-            <div id="contenedor">
-              <h3><small> Detalles del Video</small> </h3>
+            <center>  <h3><small> Detalles del Video</small> </h3></center>
               <br>
-                <div id= "detalles"> </div>
                 <form>
-                      <div class="form-group">
+                    <div class="form-group col-md-4 mb-3">
                         <label for="idVideo">ID</label>
                         <input type="text" class="form-control" id="idVideo" placeholder="" disabled>
                       </div>
@@ -139,17 +120,21 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="descripción">Descripción del Video</label>
-                      <textarea class="form-control" id="descripción" rows="3" disabled></textarea>
+                      <label for="descripcion">Descripción del Video</label>
+                      <textarea class="form-control" id="descripcion" rows="3" disabled></textarea>
                     </div>
+                    <div class="form-group">
+                      <label for="url">Url del Video</label>
+                      <input type="text" class="form-control" id="url" placeholder="https://www.youtube.com/">
+                    </div>
+                    <br>
                     <button type="submit" class="btn btn-success">Guardar</button>
                     <button type="submit" class="btn btn-danger">Cancelar</button>
                     <button type="submit" class="btn btn-primary">Eliminar</button>
+                    <br>
                   </form>
                   <br>
            </div>
-          </article>
-        </section>
       </div>
 
 

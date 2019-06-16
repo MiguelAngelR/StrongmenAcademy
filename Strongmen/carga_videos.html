@@ -69,39 +69,21 @@
       <!--Panel -->
       <br>
       <center><H2> Carga de videos </h2></center>
+        <br>
+        <hr>
+        <br>
         <div class="container" background= #C9D1F1>
-         <section class="main row">
-          <article class="col-xs-12 col-sm-8 col-md-9 col-lg-8">
-            <div id="subir">
-              <h3> <small>Subir Video</small></h3>
-              <br>
-              <form>
-                <div class="form-group">
-                  <br>
-                  <br>
-                  <br>
-                  <center>
-                  <label for="exampleFormControlFile1">Seleccionar video</label>
-                  <input type="file" class="form-control-file" id="cargar">
-                  </center>
-                </div>
-              </form>
-          </article>
-          <hr class="w-100 clearfix d-md-none ">
           <!-- Chat -->
-          <article class="col-xs-12 col-sm-4 col-md-3 col-lg-4">
-            <div id="contenedor">
-              <h3><small> Detalles del Video</small> </h3>
+            <center><h3><small> Detalles del Video</small> </h3></center>
               <br>
-                <div id= "detalles"> </div>
                 <form>
-                      <div class="form-group">
+                    <div class="form-group col-md-4 mb-3">
                         <label for="idVideo">ID</label>
                         <input type="text" class="form-control" id="idVideo" placeholder="Id del Video">
-                      </div>
+                    </div>
                       <div class="form-group">
                         <label for="titulo">Titulo</label>
-                        <input type="text" class="form-control" id="titulo" placeholder="Titulo del Video">
+                        <input type="text" class="form-control " id="titulo" placeholder="Titulo del Video">
                       </div>
                     <div class="form-row">
                       <div class="form-group col-md-6">
@@ -130,16 +112,20 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="descripción">Descripción del Video</label>
-                      <textarea class="form-control" id="descripción" rows="3"></textarea>
+                      <label for="descripcion">Descripción del Video</label>
+                      <textarea class="form-control" id="descripcion" rows="5"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-success">Subir</button>
-                    <button type="submit" class="btn btn-danger">Cancelar</button>
+                    <div class="form-group">
+                      <label for="url">Url del Video</label>
+                      <input type="text" class="form-control" id="url" placeholder="https://www.youtube.com/">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-success btn-lg">Subir</button>
+                    <button type="submit" class="btn btn-danger btn-lg">Cancelar</button>
                   </form>
                   <br>
            </div>
-          </article>
-        </section>
+
       </div>
 
 
