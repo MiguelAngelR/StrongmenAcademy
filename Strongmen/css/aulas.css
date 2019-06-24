@@ -73,3 +73,15 @@ body {
     margin-top: 7rem;
   }
 }
+
+.spacer{
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-bottom: 8rem;
+}
+.aviso
+{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 8rem;
+}

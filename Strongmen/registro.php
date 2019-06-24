@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
   <meta charset="UTF-8">
@@ -17,7 +17,6 @@
               $_SESSION["error_nombre"]=0;
           }
       ?>
-
     </script>
   <title>Registro</title>
 
